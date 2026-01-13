@@ -1,3 +1,26 @@
-<properties>
-  <sonar.organization>darthvoid555</sonar.organization>
-</properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.darthvoid</groupId>
+    <artifactId>sizov-java-repo</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <properties>
+        <sonar.organization>darthvoid555</sonar.organization>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>5.5.0.6356</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>
